@@ -1,0 +1,14 @@
+spring:  
+  jpa:  
+    hibernate:  
+      ddl-auto: update  
+    database-platform: org.hibernate.dialect.PostgreSQLDialect  
+  datasource:  
+    url: "jdbc:postgresql://localhost:5432/spm_mono"  
+    username: youruser  
+    password: yourpassword
+  flyway:
+    url: jdbc:postgresql://localhost:5432/
+    schemas: spm_mono
+    user: youruser
+    password: yourpassword
